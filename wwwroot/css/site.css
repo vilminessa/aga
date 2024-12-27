@@ -1,0 +1,278 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+    display: none !important;
+}
+
+.checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-moon {
+    color: #f1c40f
+}
+
+.fa-sun {
+    color: #f39c12
+}
+
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 2px;
+    border-radius: 50%;
+    transition: left 0.2s linear;
+}
+
+[data-bs-theme=dark] {
+    .checkbox-label .ball
+
+{
+    left: 2px;
+}
+
+}
+
+[data-bs-theme=light] {
+    .checkbox-label .ball
+
+{
+    left: 26px;
+}
+
+}
+
+#checkbox {
+    display: none;
+}
+
+.BackBoock {
+    background-image: url('/Images/Books.jpg'); /* Путь к изображению */
+    background-size: cover; /* Покрывает весь экран */
+    background-repeat: no-repeat; /* Не повторяется */
+    background-attachment: scroll;
+    background-position: center; /* Центрирует изображение */
+    backdrop-filter: blur(5px);
+}
+
+.BackZnay {
+    background-image: url('/Images/svg/book.svg'); /* Путь к вашему SVG изображению */
+    background-size: contain; /* Покрывает весь элемент */
+    background-repeat: no-repeat; /* Не повторяется */
+    background-position: center; /* Центрирует изображение */
+    display: inline-block;
+    width: 100px; /* Ширина элемента */
+    height: 50px; /* Высота элемента */
+    text-align: center;
+    line-height: 50px; /* Выравнивание текста по вертикали */
+    color: white; /* Цвет текста */
+    font-weight: bold; /* Жирный текст */
+}
+
+.marg10 {
+    margin: 10px;
+}
+
+.HgPage-80 {
+    height: 80vh;
+}
+
+.Page-Index {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url('/Images/gif/KNIGALISTAET.gif') no-repeat;
+    background-size: cover;
+}
+
+.page-container {
+    position: center;
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/Images/BookBackground.jpg'); /* Замените на путь к вашему изображению книг */
+    background-size: cover;
+    background-position: center;
+}
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+    .glass-box h1 {
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+.nav-link.btn-base {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #ffcc00;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+    .nav-link.btn-base:hover {
+        background: #e6b800;
+    }
+
+
+
+
+.catalog-container {
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+    .catalog-container h1 {
+        margin-bottom: 30px;
+        font-size: 2.5em;
+        color: #333;
+    }
+
+.genre-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.genre-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .genre-button:hover {
+        background-color: #e6b800;
+    }
+
+    .catalog-container h1 {
+        margin-bottom: 30px;
+        font-size: 2.5em;
+        color: #333;
+    }
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 45%; /* Задаем гибкость и базовую ширину карточек */
+    max-width: 540px;
+}
+
+    .card img {
+        height: auto;
+        max-width: 100%;
+    }
+.W985 {
+    max-width: 985px;
+}
+.flex-center {
+    position: center;
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    gap: 3px; /* Отступы между карточками */
+}
+
+.card {
+    flex: 1; /* Разрешаем карточкам растягиваться */
+    min-width: 0; /* Убираем минимальную ширину, чтобы карточки могли сжиматься */
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    flex: 1;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    margin-left: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+    .social-icon:hover {
+        color: #007bff;
+    }
+
+@media (max-width: 600px) {
+    .social-icons {
+        display: none;
+    }
+}
